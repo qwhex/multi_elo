@@ -3,6 +3,16 @@ multi\_elo
 
 Python ELO score calculator for more than two players
 
+Install:
+--------
+
+pip install multi\_elo
+
+Compatibility:
+--------------
+
+Python3 (tested 3.5-3.6)
+
 Usage:
 ------
 
