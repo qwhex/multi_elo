@@ -9,10 +9,10 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='multi_elo',
-    version='1.0.1',
+    version='1.0.2',
     description='ELO score calculator for more than two players',
     long_description=long_description,
-    url='https://github.com/knockoutMice/multi_elo',
+    url='https://github.com/qwhex/multi_elo',
 
     author='Mice Pápai',
     author_email='mice@gorbekor.hu',

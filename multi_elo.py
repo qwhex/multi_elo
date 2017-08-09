@@ -8,7 +8,7 @@ __author__ = 'Mice Pápai'
 __copyright__ = 'Copyright 2017, Mice Pápai'
 __credits__ = ['Mice Pápai <mice@gorbekor.hu>']
 __license__ = 'Apache-2.0'
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 
 EloPlayer = namedtuple('EloPlayer', 'place elo')
@@ -45,7 +45,7 @@ def calc_new_elos(players: List[EloPlayer], k=32):
 
 
 def main():
-    # generating random players
+    # generate random players
     elo_players = [EloPlayer(place=place, elo=randint(1200, 1800))
                    for place in range(1, 5)]
 
