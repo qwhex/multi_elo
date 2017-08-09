@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='multi_elo',
-    version='1.0.0',
+    version='1.0.1',
     description='ELO score calculator for more than two players',
     long_description=long_description,
     url='https://github.com/knockoutMice/multi_elo',
@@ -31,7 +31,6 @@ setup(
         'Operating System :: OS Independent',
 
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
 

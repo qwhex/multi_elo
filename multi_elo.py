@@ -4,6 +4,13 @@ from collections import namedtuple, defaultdict
 from random import randint
 from typing import List
 
+__author__ = 'Mice Pápai'
+__copyright__ = 'Copyright 2017, Mice Pápai'
+__credits__ = ['Mice Pápai <mice@gorbekor.hu>']
+__license__ = 'Apache-2.0'
+__version__ = '1.0.1'
+
+
 EloPlayer = namedtuple('EloPlayer', 'place elo')
 
 
@@ -37,22 +44,25 @@ def calc_new_elos(players: List[EloPlayer], k=32):
     return [players[i].elo + elo_changes[i] for i in range(n)]
 
 
-if __name__ == '__main__':
+def main():
     # generating random players
     elo_players = [EloPlayer(place=place, elo=randint(1200, 1800))
                    for place in range(1, 5)]
 
     print('Original ELO scores:')
     for place, player in enumerate(elo_players, start=1):
-        print('{}: {}'.format(place, player.elo))
+        print(f'{place}: {player.elo}')
 
-    # setting the K factor
+    # set the K factor
     k_factor = 16
 
-    # calculating new ELO scores
+    # calculate new ELO scores
     new_elos = calc_new_elos(elo_players, k_factor)
 
     print('\nNew ELO scores:')
     for place, new_elo in enumerate(new_elos, start=1):
-        print('{}: {}'.format(place, new_elo))
+        print(f'{place}: {new_elo}')
 
+
+if __name__ == '__main__':
+    main()
