@@ -1,4 +1,8 @@
-
 __pycache__/
-
 \.idea/
+.tox
+.pytest_cache
+multi_elo.egg-info
+.python-version
+dist
+.DS_Store
