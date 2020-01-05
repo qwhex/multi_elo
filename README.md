@@ -1,5 +1,7 @@
 # multi_elo
 
+[![Build Status](https://travis-ci.org/qwhex/multi_elo.svg?branch=master)](https://travis-ci.org/qwhex/multi_elo)
+
 Python [ELO](https://en.wikipedia.org/wiki/Elo_rating_system) score calculator for more than two players.
 It can be used e.g. for a 4 player multiplayer match and for team-based games as well.
 
@@ -38,13 +40,15 @@ for i, new_elo in enumerate(new_elos, start=1):
 
 ```
 
-# Development
+## Development
 
 ```bash
 # install dependencies
 pip install requirements_dev.txt
+
 # run tests with all of the supported python interpreters
 tox
+
 # or only with the currently active python interpreter
 pytest
 ```
