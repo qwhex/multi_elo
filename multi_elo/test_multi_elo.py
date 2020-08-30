@@ -37,6 +37,17 @@ def test_2_players_same_place():
     assert calc_elo(elo_players, K_FACTOR) == [1008, 1992]
 
 
+def test_2_teams():
+    # first two players win, last two players lose
+    elo_players = [
+        EloPlayer(place=1, elo=1200),
+        EloPlayer(place=1, elo=1100),
+        EloPlayer(place=2, elo=1000),
+        EloPlayer(place=2, elo=1300),
+    ]
+    assert calc_elo(elo_players, K_FACTOR) == [1212, 1120, 996, 1272]
+
+
 def test_custom_players():
     class CustomPlayer:
         def __init__(self, place):
